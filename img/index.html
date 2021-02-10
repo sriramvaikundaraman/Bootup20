@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>BootUp'20</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/icon.png" rel="icon">
+  <link href="img/icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+</head>
+
+<body>
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="#intro" class="scrollto"><img src="img/logo22.png" style="width: 150px" alt="logo" title="logo"></a>
+      </div>
+   <!--   <div id="logo" class="pull-left">
+          <a style="margin-left: 5%" href="#intro" class="scrollto"><img src="img/logo22.png" alt="logo" title="logo"></a>
+        </div>
+      -->
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#speakers">Events</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#supporters">Sponsors</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="buy-tickets"><a href="#" onclick="modalsubmit()">Register</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container wow fadeIn">
+        <div id="logo" class="pull-left">
+            <a  href="#intro" class="scrollto"><img src="img/logo.png" style="max-height: 200px;max-width:400px" alt="logo" title="logo"></a>
+        </div>
+      <h1 class="mb-4 pb-0">A  <span>Computer Science</span> Symposium</h1>
+      <p class="mb-4 pb-0">Department Of Computer Science And Engineering<br>Rajalakshmi Engineering College, Chennai</p>
+      <a href="https://www.youtube.com/watch?v=VYX7qsTEVKw&feature=emb_rel_err" class="venobox play-btn mb-4" data-vbtype="video"
+        data-autoplay="true"></a>
+      
+      <a href="#" onclick="modalsubmit()" class="about-btn scrollto">Register</a>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>About BootUp '20</h2>
+            <p align="justify">Are you a tech geek? A game freak?  Or both? Then sneak in and take a peak at the national level symposium, BootUp'20 by the department of Computer Science and Engineering at Rajalakshmi Engineering College. BootUp'20 boosts up the young minds to seek technical knowledge and helps them to think out of the box and shine out of the crowd. Walk in and experience the real fun that awaits!</p>
+          </div>
+          <div class="col-lg-3">
+            <h3>Where</h3>
+            <p><a href="https://www.google.com/maps/place/Rajalakshmi+Engineering+College/@13.009575,80.0020543,17z/data=!3m1!4b1!4m5!3m4!1s0x3a528c9ebac84723:0x18e2bf88dfefa3ed!8m2!3d13.009575!4d80.004243">Rajalakshmi Engineering College</a></p>
+          </div>
+          <div class="col-lg-3">
+            <h3>When</h3>
+            <p>Monday<br>10th February 2020</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+      Speakers Section (Technical)
+    ============================-->
+    <section id="speakers" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Technical Events</h2>
+          <p>Here are some of our Technical events</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6" onclick="modal1()">
+            <div class="speaker">
+              <img src="img/thumb/bootupexpo.jpg" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3><a>BootUp Expo</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" onclick="modal2()">
+            <div class="speaker">
+              <img src="img/thumb/whataslide.png" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3><a>What-a-Slide</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" onclick="modal3()">
+            <div class="speaker">
+              <img src="img/thumb/inter-phew.png" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3><a>Inter-phew</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" onclick="modal4()">
+            <div class="speaker">
+              <img src="img/thumb/Bamboozled.png" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3><a>Bamboozled</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" onclick="modal5()">
+            <div class="speaker">
+              <img src="img/thumb/buzzinga.png" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3><a>Buzz-inga</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" onclick="modal6()">
+            <div class="speaker">
+              <img src="img/thumb/Oh Swap!!.png" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3><a>Oh Swap!</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" onclick="modal7()">
+            <div class="speaker">
+              <img src="img/thumb/exterminator.png" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3><a>Exterminator</a></h3>
+              </div>
+            </div>
+          </div>
+
+         
+        </div>
+      </div>
+
+    </section>
+
+      <!--==========================
+      Speakers Section (Non Technical)
+    ============================-->
+    <section id="speakers" class="wow fadeInUp" >
+      <div class="container">
+        <div class="section-header">
+          <h2>Non Technical events</h2>
+          <p>Here are some of our Non technical events</p>
+        </div>
+        <div class="row">
+        <div class="col-lg-4 col-md-6" onclick="modal8()">
+          <div class="speaker">
+            <img src="img/thumb/jumblebee.png" alt="Speaker 1" class="img-fluid">
+            <div class="details">
+              <h3><a>Jumblebee</a></h3>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-lg-4 col-md-6" onclick="modal9()">
+          <div class="speaker">
+            <img src="img/thumb/Fandom wars.png" alt="Speaker 1" class="img-fluid">
+            <div class="details">
+              <h3><a>Fan-a-Tick</a></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" onclick="modal10()">
+          <div class="speaker">
+            <img src="img/thumb/Suite Up.png" alt="Speaker 1" class="img-fluid">
+            <div class="details">
+              <h3><a>Suite-up</a></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" onclick="modal11()">
+          <div class="speaker">
+            <img src="img/thumb/Pick a sigil.png" alt="Speaker 1" class="img-fluid">
+            <div class="details">
+              <h3><a>Pick-a-Sigil</a></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" onclick="modal12()">
+          <div class="speaker">
+            <img src="img/thumb/Within a flash.png" alt="Speaker 1" class="img-fluid">
+            <div class="details">
+              <h3><a>Within a FLASH</a></h3>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <div class="container">
+        <div class="section-header">
+          <h2>With lots of surprise events!!</h2>
+
+        </div>
+    </div>
+
+
+     <!--==========================
+      Subscribe Section
+    ============================-->
+    <section id="subscribe">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h2>Register</h2>
+          <p>Register Now!!!!</p>
+        </div>
+
+        <form>
+          <div class="form-row justify-content-center">
+            <div class="col-auto">
+              <button type="button" onclick="modalsubmit()">Register</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+
+    <!--==========================
+      Gallery Section
+    ============================-->
+    <section id="gallery" class="wow fadeInUp">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>Gallery</h2>
+          <p>Check our gallery from the recent events</p>
+        </div>
+      </div>
+
+      <div class="owl-carousel gallery-carousel">
+       
+        <a href="img/gallery/12.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/12.jpg" alt=""></a>
+        <a href="img/gallery/13.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/13.jpg" alt=""></a>
+        <a href="img/gallery/14.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/14.jpg" alt=""></a>
+        <a href="img/gallery/15.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/15.jpg" alt=""></a>
+        <a href="img/gallery/16.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/16.jpg" alt=""></a>
+        <a href="img/gallery/17.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/17.jpg" alt=""></a>
+        <a href="img/gallery/18.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/18.jpg" alt=""></a>
+      </div>
+
+    </section>
+
+    <!--==========================
+      Sponsors Section
+    ============================-->
+    <section id="supporters" class="section-with-bg wow fadeInUp">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>Sponsors</h2>
+        </div>
+
+        <div class="row no-gutters supporters-wrap clearfix">
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/2.png" class="img-fluid" alt="">
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/3.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/4.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/5.png" class="img-fluid" alt="">
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/6.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/7.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/8.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--==========================
+      F.A.Q Section
+    ============================-->
+    <section id="faq" class="wow fadeInUp">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>F.A.Q </h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+              <ul id="faq-list">
+
+                <li>
+                  <a data-toggle="collapse" class="collapsed" href="#faq1">Is there any transport arrangements? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq1" class="collapse" data-parent="#faq-list">
+                    <p>
+                      Participants can use our college bus facilities. For more details visit rectransport.com
+                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <a data-toggle="collapse" href="#faq2" class="collapsed">Should I register separately for each events? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq2" class="collapse" data-parent="#faq-list">
+                    <p>
+                      No, only basic initial registration fee of Rs.100/-
+                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <a data-toggle="collapse" href="#faq3" class="collapsed">Will food be provided? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq3" class="collapse" data-parent="#faq-list">
+                    <p>
+                      Yes, food tokens will be given for lunch.
+                    </p>
+                  </div>
+                </li>
+      
+               
+              </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+   
+    
+   
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top" id="contact">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <img src="img/logo.png" alt="TheEvenet">
+            <p>BootUp '20 is the National Level Technical Symposium conducted by the Department of Computer Science & Engineering of Rajalakshmi Engineering College, Chennai. </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+           
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p> <strong> Email id </strong>: bootup@rajalakshmi.edu.in <br>
+            <strong> Contact number </strong> <br>
+            Subeksha: 9543490414 <br>
+            Akshaya: 9176911466 <br>
+            Sriram: 8754206937 <br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- #footer -->
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+<!--==========================
+        Modal Section
+============================-->
+  
+
+  <div id="myModal1" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" >
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="text-align: left;">BootUp Expo</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4 "><a href="img/events/bootupexpo.jpg"><img src="img/events/bootupexpo.jpg" alt="bootupexpo" class="img-fluid"></a></div>
+            <div class="col-md-8 ">
+              <p align="justify">Approaching problem solving with a hands-on, user-centric mindset leads to innovation, and innovation can lead to differentiation and a competitive advantage. Get your minds dirty and dazzle out with an innovative project idea and amaze the judges with your talent. Be smart! Be ready! Be Noticed!
+                 <br>
+                 <p><b>Domain</b></p>
+                 <ul>
+                   <li>Gender stereotypic empowerment    </li>                
+                   <li>Communication and signal processing</li>
+                   <li>Networks and security       </li>
+                   <li>Big data</li>
+                   <li>BioInformatics and Technology</li>
+                   <li>Open Innovations(VLSI, Android, Web, Embedded, Cloud, Power electronics, etc)</li>
+                 </ul>
+              </p>
+              <p><b>Team size :</b> 2 to 3</p>
+              <p><b>Rules: </b></p>
+              <ul>
+                <li> Project must be a product </li>
+                <li>Need not to be completely full</li>
+                <li>Demo video is accepted if the connections are complicated</li>
+                <li>Own components should be brought by the team</li>
+              </ul>
+              <p><b>Abstract should be sent to bootup@rajalakshmi.edu.in on or before 31-01-2020</b></p>
+              <p><b>Contact :</b></p>
+              <ol>
+                <li>Vishal S  +91 95660 30446 </li>
+                <li>Aarthi M  +91 94459 56811</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <!------------------------------------------------------------------------------------------------------------------------->
+  
+  
+
+  <div id="myModal2" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="text-align: center;">What-A-Slide</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4"><a  href="img/events/whataslide.jpg" ><img src="img/events/whataslide.jpg" alt="bootupexpo" class="img-fluid"></a></div>
+            <div class="col-md-8">
+              <p align="justify">Here’s a chance to unleash your innovative and technical skill on a single platform. Showcase your unique ideas in the form of well integrated and intriguing presentation. It strives to explore the inquisitiveness of young minds by giving their incredulous ideas a definitive direction.
+              </p>
+
+              <br>
+              <p><b>Domain</b></p>
+              <ul>
+                <li>IOT </li>       
+                <li>Machine learning</li>         
+                <li>Image and speech processing</li>
+                <li>Wireless networks</li>
+                <li>Networking</li>
+                <li>Cyber security</li>
+                <li>ICT in agriculture</li>
+                <li>Healthcare with IoMT</li>
+                <li>Smart cities</li>
+                <li>Robotics and automation </li>
+                <li>Bioinformatics</li>
+              </ul>
+           </p>
+           <p><b>Team size :</b> Max 2</p>
+           <p><b>Presentation time : </b>10 minutes</p>
+           <p><b>Rules: </b></p>
+           <ul>
+             <li> Abstract will be selected online </li>
+             <li>Shortlisted teams will be presenting their paper on the day of the event</li>
+           </ul>
+           <p><b>Abstract should be sent to bootup@rajalakshmi.edu.in on or before 31-01-2020</b></p>
+           <p><b>Contact :</b></p>
+           <ol>
+             <li>Subeksha S +91 95434 90414 </li>
+             <li>Varshini Ramados. +91 88701 82871</li>
+             <li>Akshaya K  +91 91769 11466 </li>
+           </ol>
+
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <!------------------------------------------------------------------------------------------------------------------------->
+  
+
+  <div id="myModal3" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="text-align: left;">Inter-Phew</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4"><a href="img/events/interphew.jpg"><img src="img/events/interphew.jpg" alt="inter-phew" class="img-fluid"></a></div>
+            <div class="col-md-8">
+              <p align="justify"> "Fall seven times, but stand up eight.” Choose a job you love and you’ll never have to work. To the noobs out there who fear facing interviews, here’s a chance. Grab the opportunity, give an attempt and get more confident and experienced.</p>
+
+              <p><b>No. of Rounds :</b> 2</p>
+              <p><b>Present yourself as in actual interview along with your resume and get an opportunity to work as an intern in a reputated company</b></p>
+              <p><b>Contact :</b></p>
+              <ol>
+                <li>Sneha   +91 8939069350    </li>
+                <li>Sakthi.S   +91 9962376374    </li>
+                <li>Priyadharshini B +91 9444419657     </li>
+                <li>Priyanka K   +91 9444625575                  </li>
+              </ol>
+   
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <!------------------------------------------------------------------------------------------------------------------------->
+  
+
+  <div id="myModal4" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="text-align: left;">Bamboozled</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4"><a href="img/events/Bamboozled.jpg" ><img src="img/events/Bamboozled.jpg" alt="Bamboozled" class="img-fluid"></a></div>
+            <div class="col-md-8">
+              <p align="justify">This techno event is all about recognizing and identifying the jumbled up pics of the technical equipments. The team that finds the maximum equipments will get the chance for the next connection round. Sharpen your minds for this extremely fun event!  
+              </p>
+              <p><b>No.of rounds: </b>2</p>
+              <p><b>Team size :</b>Max 2</p>
+             <p> <b>This event is the combination of connection and Engineer's eye </b></p>
+             <p><b>Contact :</b></p>
+              <ol>
+                <li>Tejeswar +91 9677133040                  </li>
+                <li>Sriram S  +91 8870413136                  </li>
+                <li>Srivaths   +91 7358677830                  </li>
+              </ol>
+
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <!------------------------------------------------------------------------------------------------------------------------->
+  
+
+  <div id="myModal5" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="text-align: left;">Buzz-inga</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4"><a href="img/events/buzzinga.png"><img src="img/events/buzzinga.png" alt="buzzinga" class="img-fluid"></a></div>
+            <div class="col-md-8">
+              <p align="justify">Hurry! Far from classroom note, unlocking knowledge at the speed of thought. Close your book and open your mind. Finger on the buzzers and the quiz starts!
+              </p>
+              <p><b>No. of rounds: </b>2</p>
+              <p><b>Max team size :</b>2</p>
+              <p><b>This event is completely based on quiz and Logo quiz</b></p>
+              <p><b>Contact :</b></p>
+              <ol>
+                  <li>Chooriya Prabha   +919488010264  </li>
+                  <li>Bharath Srinivas +919176120969      </li>
+                  <li>Aravindan +91 91761 51154        </li>
+                </ol>
+              
+
+
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <!------------------------------------------------------------------------------------------------------------------------->
+  
+
+  <div id="myModal6" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="text-align: left;">Oh Swap!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4"><a href="img/events/ohswap.jpg"><img src="img/events/ohswap.jpg" alt="ohswap" class="img-fluid"></a></div>
+            <div class="col-md-8">
+              <p align="justify"> Time to check on how much you understand your partner. The event gets divided into two slots. One will be blindfolded and the other will type in the code during the first slot. At the end of the first slot the blindfold gets transferred to the next person and the second one has to complete the code. Walk in and test how well you understand each other!
+              </p>
+              <p><b>No. of rounds:</b>2</p>
+              <p><b>Team size:</b>Must be 2</p>
+              <p><b>Rules :</b></p>
+              <ol>
+                <li>Number of swaps in 1st round is 1.</li>
+                <li>No of swaps in 2nd round occurs after every 5 minutes.</li>
+              </ol>
+              <p><b>Contact :</b></p>
+              <ol>
+                  <li>Vijay Prasath D P  +91 82201 59497           </li>
+                  <li> Srinath R +91 80565 43260                    </li>
+                </ol>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <!------------------------------------------------------------------------------------------------------------------------->
+  
+
+  <div id="myModal7" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="text-align: left;">Exterminator</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4"><a href="img/events/Exterminator.png"><img src="img/events/Exterminator.png" alt="Exterminator" class="img-fluid"></a></div>
+            <div class="col-md-8">
+              <p align="justify">Do you consider yourself to be a coding enthusiast? If so, you must be proficient at the art of DEBUGGING. If you’re better at critiquing code than at creating code, then this is the best call for you. Crypt your mind to get exact information. Use hints/keys to produce the plain text.
+              </p>
+              <p><b>No. of rounds: </b>2</p>
+              <p><b>Max Team size :</b>1</p>
+              <p><b>Rules :</b></p>
+              <ul>
+                <li>1st round is paper pen test. 2nd round is an online test.      </li>
+                <li>Filtering will be done based on the number of errors found.</li>
+              </ul>
+              <p><b>Contact :</b></p>
+
+              <ol>
+                  <li>Bhanu Shree +91 73586 43689                    </li>
+                  <li>Dilli Rao +91 88701 42198 </li>
+                  <li>Sriram.N +91 78459 14694</li>
+              </ol>
+
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <!------------------------------------------------------------------------------------------------------------------------->
+  
+
+  <div id="myModal8" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="text-align: left;">Jumblebee</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4"><a href="img/events/jumblebee.png"><img src="img/events/jumblebee.png" alt="jumblebee" class="img-fluid"></a></div>
+            <div class="col-md-8">
+              <p align="justify">Faster you type, more the conversation. Come, show your typing skill on the jumbled keypad provided.
+              </p>
+              <p><b>Max Team size :</b>1</p>
+              <p><b>No. of rounds: </b>2</p>
+             
+              <p><b>Rules :</b></p>
+              <ul>
+                <li align="justify"><b>Round 1: </b> A software will be installed in every system which jumbles the values of the keys. A paragraph will be given and should  be typed with minimum errors and maximum lines covered to proceed to the next round. The time allotted for each round remains fixed</li>
+                <li align="justify"><b>Round 2 : </b> In this round , the participant will be given a topic on which he/she must type a paragraph on his/her own with same set up.
+                </li>
+              </ul>
+              
+              <p><b>Contact :</b></p>
+
+              <ol>
+                  <li> Devipriya.H  +91 72008 02101                    </li>
+                  <li>Arul mozhi.P +91 81247 18996</li>
+                  <li>Guhapriya K S +9194445 14767</li>
+              </ol>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <!------------------------------------------------------------------------------------------------------------------------->
+  
+
+  <div id="myModal9" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="text-align: left;">Fandom wars</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4"><a href="img/events/fandom wars.png"><img src="img/events/fandom wars.png" alt="fandom wars" class="img-fluid"></a></div>
+            <div class="col-md-8">
+              <p align="justify">Obsessed with your favourite franchise ?? Are you confident that you know each and every minute detail hiding around the corner?? Well then , we have something that will boost your inner fanboy. Put your expertice on various fandoms to the test over the 3 meticulously designed rounds and stand a chance to become the Ultimate Fandom Fanatic
+              </p>
+
+              <p><b>Max Team size :</b>2</p>
+              <p><b>No. of rounds: </b>3</p>
+             
+              <p><b>Rules :</b></p>
+              <ul>
+                <li align="justify"><b>Round 1</b> contains questions from different fandoms in no particular order </li>
+                <li align="justify"><b>Round 2 </b>will have audio/video clipping from various fandoms.</li>
+                <li align="justify"><b>Round 3 </b>will be a surprise and will be revealed on the spot.  </li>
+              </ul>
+              
+              <p><b>Contact :</b></p>
+
+              <ol>
+                  <li>Nishanth +91 9962863114 </li>
+                  <li>Rohit	+91 8939453505	</li>
+                  <li>Sivesh raj   +91 8870684383                    </li>
+              </ol>
+
+
+
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <!------------------------------------------------------------------------------------------------------------------------->
+  
+
+  <div id="myModal10" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="text-align: left;">Suite-up</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4"><a href="img/events/SuitUp.jpg"><img src="img/events/SuitUp.jpg" alt="SuiteUp" class="img-fluid"></a></div>
+            <div class="col-md-8">
+              <p align="justify">Are you confident enough on your partner? Do you think they understand you well? Come and get a chance to test it out. Each team will be given a question to be solved. Solve ‘em separately and check if your answer matches with that of your partner’s and there starts the real fun! 
+              </p>
+
+              <p><b>Team size :</b>Must be 2</p>
+              <p><b>No. of rounds: </b>2</p>
+
+              <p><b>Rules :</b></p>
+              <ul>
+                <li align="justify"><b>Round 1 :</b>This is a 2 people event. Question paper containing 10 questions will be given to each of them. The teams with the highest compatibility proceeds to the next round.</li>
+                <li align="justify"><b>Round 2 :</b>A surprise game will be conducted from which the winner will be decided.                </li>
+             
+              </ul>
+              
+              <p><b>Contact :</b></p>
+
+              <ol>
+                  <li>Divya Varshini R B  +91 70105 93156  </li>
+                  <li>Elakkiya N 095663 05330</li>
+                  <li>Ankith Ravi   +91 9442569105 </li>
+              </ol>
+
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <!------------------------------------------------------------------------------------------------------------------------->
+  
+
+  <div id="myModal11" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="text-align: left;">Pick-a-Sigil</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4"><a href="img/events/Pick-a-Sigil.jpg"><img src="img/events/Pick-a-Sigil.jpg" alt="Pick-a-Sigil" class="img-fluid"></a></div>
+            <div class="col-md-8">
+              <p align="justify"> “Don’t rise your voice, improve your argument!” Speech is power: speech is to persuade, to convert, to compel. Think. Speak. Listen. Don’t Hate it, just Debate it!
+              </p>
+
+              <p><b>Team size :</b> 2</p>
+              <p><b>No. of rounds: </b>2</p>
+
+              <p><b>Description:</b></p>
+              <ul>
+                <li align="justify"><b>Round 1 :</b>Topic for the debate will be given 15 min prior to the event. Each team should speak for 10 min.    </li>
+                <li align="justify"><b>Round 2 :</b>Based on the results of round 1, 4 teams will be judged in round 2.               </li>
+             
+              </ul>
+
+              <p><b>Rules:</b></p>
+              <ul>
+                <li align="justify">The format will be British Parliamentary Debate.</li>
+                <li align="justify">  The format will have 4 teams of 2 in each room.              </li>
+                <li align="justify">Based on team’s speaking scores, 4 teams will advance to the finals.</li>
+             
+              </ul>
+              
+              <p><b>Contact :</b></p>
+
+              <ol>
+                  <li>Vaishali +91 97911 44386 </li>
+                  <li>Subashri TSR  +91 99403 04018</li>
+              </ol>
+
+
+
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <!------------------------------------------------------------------------------------------------------------------------->
+  
+
+  <div id="myModal12" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="text-align: left;">Within a FLASH
+          </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4"><a href="img/events/withinaflash.jpg"><img src="img/events/withinaflash.jpg" alt="withinaflash" class="img-fluid"></a></div>
+            <div class="col-md-8 ">
+              <p align="justify">Are you a wiz capable of freezing the moment? Here’s a chance to make people believe that there are things nobody would see if you didn’t photograph them. Showcase your skill win exciting prizes and certificates.
+              </p>
+              <p><b>Team size :</b>1</p>
+              <p><b>Description : </b>An online event in which the pictures must be posted in the instagram page. With the help of jury members and the likes for the picture award will be given.
+              </p>
+              <p><b>Send the photos along with your academic details to bootup@rajalakshmi.edu.in on or before 31-01-2020. It will be posted in the instagram page @bootup20</b></p>
+              
+              <p><b>Contact :</b></p>
+
+              <ol>
+                  <li>Vaishali +91 97911 44386 </li>
+                  <li>Akshaya K +91 91769 11466                    </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <!------------------------------------------------------------------------------------------------------------------------->
+
+
+  
+  <div id="actormodal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Register</h4>                
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="actorname">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="actorbio">Email:</label>
+                        <input type="email" class="form-control" id="mail" placeholder="Enter email" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="actorname">College Name:</label>
+                      <input type="text" class="form-control" id="college" placeholder="Enter College Name" required>
+                    </div>
+                    <div class="form-group">
+                    <label for="actorname">Department:</label>
+                    <input type="text" class="form-control" id="department" placeholder="Department" required>
+                    </div>
+                    <div class="form-group">
+                    <label for="actorname">Number:</label>
+                    <input type="number" class="form-control" id="phone" placeholder="Contact Number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="actorsex">Gender:</label>
+                        <select class="form-control" id="actorsex" required>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="year">Select Year:</label>
+                      <select class="form-control" id="year" required>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                      </select>
+                    </div>
+
+                    <button type="button" class="btn btn-success btn-md" data-dismiss="modal" style="width: 100%;background-color: #E0072F;" onclick="addparticipant()">Submit</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script> 
+  function modal1(){
+  $('#myModal1').modal('show');
+  }
+  function modal2(){
+  $('#myModal2').modal('show');
+  }
+  function modal3(){
+  $('#myModal3').modal('show');
+  }
+  function modal4(){
+  $('#myModal4').modal('show');
+  }
+  function modal5(){
+  $('#myModal5').modal('show');
+  }
+  function modal6(){
+  $('#myModal6').modal('show');
+  }
+  function modal7(){
+  $('#myModal7').modal('show');
+  }
+  function modal8(){
+  $('#myModal8').modal('show');
+  }
+  function modal9(){
+  $('#myModal9').modal('show');
+  }
+  function modal10(){
+  $('#myModal10').modal('show');
+  }
+  function modal11(){
+  $('#myModal11').modal('show');
+  }
+  function modal12(){
+  $('#myModal12').modal('show');
+  }
+  function modalsubmit(){
+    $('#actormodal').modal('show');
+  }
+  </script>
+  <!-- Template Main Javascript File -->
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCqMp3Ke2w2Prprcsa8jEIhcj03lDUK_6k",
+      authDomain: "bootup2020.firebaseapp.com",
+      databaseURL: "https://bootup2020.firebaseio.com",
+      projectId: "bootup2020",
+      storageBucket: "bootup2020.appspot.com",
+      messagingSenderId: "79702037648",
+      appId: "1:79702037648:web:5f7557a2cd228c6550f415"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="js/form.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
